@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Week12Project.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+</head>
+<body class="container">
+    <div id="flowers" class ='jumbotron'>
+        <h2>Add New Flowers</h2>
+        <input type="text" id="flowerName" class="form-control" placeholder="Flower Name">
+        <input type="number" id="ID" class="form-control" placeholder="ID Number">
+        <input type="text" id="color" class="form-control" placeholder="Color">
+        <input type="number" id="quantity" class="form-control" placeholder="Quantity">  
+        <button id="button" class="btn btn-primary form-control">Add Flower</button>
+        </div>
+
+    <div id="flowers" class ='jumbotron'>
+        <h2>Find Flowers</h2>
+        <input type="number" id="dataID" class="form-control" placeholder="ID Number">
+        
+         
+        <button id="dataButton" class="btn btn-primary form-control">Find Flower</button>
+    </div>
+
+    <table class="table table-sm, container-fluid" id="table">
+        <thead>
+          <tr>
+            <th scope="col-sm-3">Flower</th>
+            <th scope="col-sm-3">ID</th>
+            <th scope="col-sm-3">Color</th>
+            <th scope="col-sm-3">Quantity</th>
+            <td><input value="Delete Row" type="button" onclick="deleteRow()"></td>
+          </tr>
+        </thead>
+
+    </div>
+
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>
+    <script src="Week12HardCode.js"></script>
+</body>
+</html>
